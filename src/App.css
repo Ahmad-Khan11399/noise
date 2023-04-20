@@ -1,38 +1,64 @@
 .App {
   text-align: center;
+  position: absolute;
+  top:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.start{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+margin-top: 20%;
+width: 20%;
+height: 15%;
 }
+.start:hover{
+    transform: translateY(2px);
+    background-color: "fff";
+}
+.intro {
+    font-family: "McLaren", cursive;
+  color:#6EFFCF;
+  text-align: center;
+  background-image: url("./intro_back.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.record {
+     font-family: "McLaren", cursive;
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+  background-color: transparent;
+  color:white;
+  background-image: url("./app_back.jpg");
+  background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.record button {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.record button:hover {
+  background-color: #e60000;
+}
+
+.record button:active {
+  transform: translateY(2px);
 }
