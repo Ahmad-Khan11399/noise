@@ -56,11 +56,13 @@ function AudioMeter() {
   return (
     <>
       <Speedometer value={Math.round(noiseLevel)} msg={message} />
+        <div className="speed">
   <strong>    <p>{Math.round(noiseLevel)}</p></strong>
     <strong>  <p>{message}</p> </strong>
 
 
-    </>
+    </div>
+      </>
   );
 }
 

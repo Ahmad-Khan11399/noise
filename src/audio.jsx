@@ -8,9 +8,11 @@ const AudioRecorder = () => {
 
   return (
     <div className="record">
-    <strong>   <h2>Kindly allow browser to use microphone </h2></strong>
-      <Button onClick={()=>{setAudioData(true)}}>Press to get noise levels</Button>
-       <p>Kindly Wait for some time after clicking the button</p>
+     <div className="sub-div">
+     <p>Kindly allow browser to use microphone </p>
+       <Button onClick={()=>{setAudioData(true)}}>Press to get noise levels</Button>
+        <p>Kindly Wait for some time after clicking the button</p>
+     </div>
       {audioData?<AudioMeter/>:null}
     </div>
   );
